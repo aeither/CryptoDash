@@ -16,6 +16,9 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import Typography from "@material-ui/core/Typography";
 
 function Homepage() {
+
+  const API_KEY = process.env.NEXT_PUBLIC_API
+
   if (typeof window !== "undefined") {
     Storage.prototype.setObj = function (key, obj) {
       return this.setItem(key, JSON.stringify(obj));
@@ -59,7 +62,7 @@ function Homepage() {
           method: "POST",
           headers: new Headers({
             "content-type": "application/json",
-            "x-api-key": 0000000000000, //INSERT API KEY
+            "x-api-key": API_KEY, //INSERT API KEY
           }),
           body: JSON.stringify({
             currency: "USD",
