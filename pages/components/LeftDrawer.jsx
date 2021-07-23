@@ -16,8 +16,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import EqualizerIcon from '@material-ui/icons/Equalizer';
-import ViewDayIcon from '@material-ui/icons/ViewDay';
+import EqualizerIcon from "@material-ui/icons/Equalizer";
+import ViewDayIcon from "@material-ui/icons/ViewDay";
 
 import Link from "next/link";
 
@@ -160,14 +160,12 @@ export default function LeftDrawer() {
         </List>
         <Divider />
         <List>
-          <Link href="/overview">
-            <ListItem button>
-              <ListItemIcon>
-                <ViewDayIcon />
-              </ListItemIcon>
-              <ListItemText primary="Overview" />
-            </ListItem>
-          </Link>
+          <ListItem button>
+            <ListItemIcon>
+              <ViewDayIcon />
+            </ListItemIcon>
+            <ListItemText primary="Overview" />
+          </ListItem>
           <Link href="/">
             <ListItem button>
               <ListItemIcon>
